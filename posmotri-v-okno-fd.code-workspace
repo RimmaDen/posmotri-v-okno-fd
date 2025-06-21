@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "posmotri-v-okno-fd",
+			"path": "posmotri-v-okno-fd"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "posmotri-v-okno-fd"
+	}
+}
