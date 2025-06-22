@@ -6,11 +6,17 @@
 
 html {
   block-size: 100%;
+  height: 100%;
 }
 
 .page {
   inline-size: 1200px;
   block-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: #fff;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -37,6 +43,71 @@ ol {
   list-style: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+  white-space: nowrap;
+}
+.content {
+  display: grid;
+  grid-template-columns: 711px 399px;
+  grid-template-areas:
+  "result details";
+  box-sizing: border-box;
+  place-content: center end;
+  gap: 30px;
+  margin: 0 30px;
+}
+.result {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 13px;
+  justify-content: end;
+
+}
+
+.result__video-container {
+  position: relative;
+  width: 100%;
+}
+
+.search-form {
+ display: flex;
+ justify-content: space-between;
+}
+.result__video {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+.content__details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 300px;
+  overflow-y: auto;
+  position: relative; 
+
+}
+
+
+
+.content__list-container {
+
+}
 /* Кастомный скроллбар */
 .custom-scrollbar::-webkit-scrollbar {
   width: 4px;
